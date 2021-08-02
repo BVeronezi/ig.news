@@ -45,6 +45,8 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
         const type = event.type;
 
+        console.log(event.type)
+
         if (relevantEvents.has(type)) {
             try {
                 switch (type) {
